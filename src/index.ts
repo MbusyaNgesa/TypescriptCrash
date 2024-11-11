@@ -34,10 +34,34 @@
 // console.log(mySize);
 
 //optimizing enum to generate lesser js code
-const enum Size {
-  Small = 1,
-  Medium,
-  Large,
-}
-let mySize = Size.Large;
-console.log(mySize);
+// const enum Size {
+//   Small = 1,
+//   Medium,
+//   Large,
+// }
+// let mySize = Size.Large;
+// console.log(mySize);
+
+//Functions
+// function calculateTax(income: number, taxYear: number): number {
+//   if (taxYear < 2020) return income * 1.2;
+//   return income * 1.4;
+// }
+
+// console.log(calculateTax(20_000, 2010));
+
+//Using default values
+// function calculateTax(income: number, taxYear = 2022): number {
+//   if (taxYear < 2020) return income * 1.2;
+//   return income * 1.4;
+// }
+
+// console.log(calculateTax(20_000));
+
+//Objects
+//age has been placed as being optional
+//to prevent modifying id use readonly
+let employee: { readonly id: number; name: string; age?: number } = {
+  id: 1,
+  name: "Ian",
+};
